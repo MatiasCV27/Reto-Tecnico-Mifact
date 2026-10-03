@@ -3,4 +3,17 @@ server:
 
 spring:
   application:
-    name: inventory-service
+    name: reto-tecnico
+  datasource:
+    url: jdbc:mysql://localhost:3306/scm_product?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: mysql
+    password: '123'
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
