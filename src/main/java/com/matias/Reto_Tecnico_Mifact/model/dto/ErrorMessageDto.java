@@ -13,7 +13,7 @@ public class ErrorMessageDto {
     private String path;
     private Map<String, String> errors;
 
-    public ErrorMessageDto(String path, String exception, String message) {
+    public ErrorMessageDto(String message, String exception, String path) {
         this.message = message;
         this.exception = exception;
         this.path = path;

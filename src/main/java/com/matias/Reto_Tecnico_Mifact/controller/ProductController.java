@@ -12,6 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.net.URI;
 
 @Slf4j
@@ -55,7 +56,7 @@ public class ProductController {
 
     @PostMapping
     @Operation(summary = "Save new product", description = "Save new product")
-    public ResponseEntity<ProductDto> saveProduct(@RequestBody ProductDto productDto) {
+    public ResponseEntity<ProductDto> saveProduct(@Valid @RequestBody ProductDto productDto) {
         ProductDto saved = productService.saveProduct(productDto);
         URI location = URI.create("/api/orders/" + saved.getCode());
         return ResponseEntity.created(location).body(saved);
@@ -63,7 +64,7 @@ public class ProductController {
 
     @PutMapping("/{code}")
     @Operation(summary = "Update product by code", description = "Update product by code")
-    public ResponseEntity<ProductDto> saveProduct(@RequestBody ProductDto productDto,
+    public ResponseEntity<ProductDto> saveProduct(@Valid @RequestBody ProductDto productDto,
                                                   @PathVariable String code) {
         return ResponseEntity.ok(productService.updateProduct(productDto, code));
     }

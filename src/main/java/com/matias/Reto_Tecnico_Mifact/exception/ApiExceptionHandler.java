@@ -1,6 +1,7 @@
 package com.matias.Reto_Tecnico_Mifact.exception;
 
 import com.matias.Reto_Tecnico_Mifact.model.dto.ErrorMessageDto;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -25,21 +26,29 @@ public class ApiExceptionHandler {
             errors.put(error.getField(), error.getDefaultMessage());
         });
 
-        return new ErrorMessageDto(exception.getMessage(), exception.getClass().getSimpleName(), request.getRequestURI(), errors);
+        return new ErrorMessageDto("Validation failed", exception.getClass().getSimpleName(), request.getRequestURI(), errors);
+    }
+
+    @ResponseBody
+    @ResponseStatus(HttpStatus.CONFLICT)
+    @ExceptionHandler(DataIntegrityViolationException.class)
+    public ErrorMessageDto conflict(HttpServletRequest request, DataIntegrityViolationException exception) {
+        return new ErrorMessageDto("Product code already exists or database constraint violation",
+                exception.getClass().getSimpleName(),
+                request.getRequestURI());
     }
 
     @ResponseBody
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(NotFoundException.class)
     public ErrorMessageDto notFound(HttpServletRequest request, Exception exception) {
-
         return new ErrorMessageDto(exception.getMessage(), exception.getClass().getSimpleName(), request.getRequestURI());
     }
 
     @ResponseBody
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(Exception.class)
     public ErrorMessageDto exception(HttpServletRequest request, Exception exception) {
-
         return new ErrorMessageDto(exception.getMessage(), exception.getClass().getSimpleName(), request.getRequestURI());
     }
 }
