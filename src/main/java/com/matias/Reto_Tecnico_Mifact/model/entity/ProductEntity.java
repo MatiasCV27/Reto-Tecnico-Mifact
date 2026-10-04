@@ -39,7 +39,7 @@ public class ProductEntity {
     private Boolean enabled = true;
 
     @PrePersist
-    private void prePersist() {
+    public void prePersist() {
         this.createDate = LocalDate.now();
     }
 }
