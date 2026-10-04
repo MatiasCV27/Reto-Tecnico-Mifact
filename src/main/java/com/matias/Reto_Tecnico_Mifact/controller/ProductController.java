@@ -19,6 +19,7 @@ import java.net.URI;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/products")
+@CrossOrigin(origins = "http://localhost:4200")
 @Tag(name = "Product", description = "Product API operations")
 public class ProductController {
 
