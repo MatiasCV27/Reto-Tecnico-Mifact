@@ -1,0 +1,220 @@
+{
+  "info": {
+    "_postman_id": "74596e15-c23c-4b68-95d3-976c6cf16c43",
+    "name": "Reto Técnico MIFACT",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28095999"
+  },
+  "item": [
+    {
+      "name": "Search Product",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:1100/api/v1/products/search?pageNumber=0&pageSize=10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "1100",
+          "path": [
+            "api",
+            "v1",
+            "products",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "pageNumber",
+              "value": "0"
+            },
+            {
+              "key": "pageSize",
+              "value": "10"
+            },
+            {
+              "key": "sortBy",
+              "value": "id",
+              "disabled": true
+            },
+            {
+              "key": "direction",
+              "value": "asc",
+              "disabled": true
+            },
+            {
+              "key": "code",
+              "value": "PROD-102",
+              "disabled": true
+            },
+            {
+              "key": "name",
+              "value": "Mouse Inalámbrico",
+              "disabled": true
+            },
+            {
+              "key": "description",
+              "value": "Sensor Darkfield de 8000 DPI",
+              "disabled": true
+            },
+            {
+              "key": "category",
+              "value": "Accesorios",
+              "disabled": true
+            },
+            {
+              "key": "enabled",
+              "value": "false",
+              "disabled": true
+            },
+            {
+              "key": "priceMin",
+              "value": "400",
+              "disabled": true
+            },
+            {
+              "key": "priceMax",
+              "value": "500",
+              "disabled": true
+            },
+            {
+              "key": "stockMin",
+              "value": "10",
+              "disabled": true
+            },
+            {
+              "key": "stockMax",
+              "value": "100",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get By Code",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:1100/api/v1/products/:code",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "1100",
+          "path": [
+            "api",
+            "v1",
+            "products",
+            ":code"
+          ],
+          "variable": [
+            {
+              "key": "code",
+              "value": "PROD-10011"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Product",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:1100/api/v1/products/:code",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "1100",
+          "path": [
+            "api",
+            "v1",
+            "products",
+            ":code"
+          ],
+          "variable": [
+            {
+              "key": "code",
+              "value": "PROD-1051"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Save Product",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Soporte de Monitor Dual Articulado\",\r\n  \"description\": \"Brazo metálico para dos pantallas de 13 a 27 pulgadas, montaje VESA\",\r\n  \"category\": \"Accesorios\",\r\n  \"createDate\": \"2026-05-24\",\r\n  \"enabled\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:1100/api/v1/products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "1100",
+          "path": [
+            "api",
+            "v1",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Updated Product",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Soporte de Monitor Dual Articulado\",\r\n  \"description\": \"Brazo metálico para dos pantallas de 13 a 27 pulgadas\",\r\n  \"price\": 200.00,\r\n  \"stock\": 20,\r\n  \"category\": \"Accesorios\",\r\n  \"enabled\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:1100/api/v1/products/:code",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "1100",
+          "path": [
+            "api",
+            "v1",
+            "products",
+            ":code"
+          ],
+          "variable": [
+            {
+              "key": "code",
+              "value": "PROD-1051"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
