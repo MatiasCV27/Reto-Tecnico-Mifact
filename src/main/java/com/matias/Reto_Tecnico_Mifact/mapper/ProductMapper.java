@@ -30,6 +30,7 @@ public class ProductMapper {
                 .price(dto.getPrice())
                 .stock(dto.getStock())
                 .category(dto.getCategory())
+                .enabled(true)
                 .build();
     }
 }

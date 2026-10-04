@@ -122,8 +122,8 @@ public class ProductService implements IProductService {
 
         log.info("Initiating deleting product with code {}", code);
 
-        if (repository.existsByCode(code)) {
-            throw new IllegalArgumentException("Product with code " + code + " already exists");
+        if (!repository.existsByCode(code)) {
+            throw new IllegalArgumentException("Product with code " + code + " no exists");
         }
 
         ProductEntity product = repository.findByCode(code).orElse(null);

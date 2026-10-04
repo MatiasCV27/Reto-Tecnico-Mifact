@@ -1,0 +1,502 @@
+[
+  {
+    "code": "PROD-1001",
+    "name": "Laptop Gamer Lenovo Legion 5",
+    "description": "AMD Ryzen 7 5800H, 16GB RAM, 512GB SSD, RTX 3060",
+    "price": 4299.99,
+    "stock": 12,
+    "category": "Computación",
+    "createDate": "2026-01-15",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1002",
+    "name": "Mouse Inalámbrico Logitech MX Master 3S",
+    "description": "Sensor Darkfield de 8000 DPI, USB-C, Graphite",
+    "price": 389.50,
+    "stock": 45,
+    "category": "Accesorios",
+    "createDate": "2026-01-16",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1003",
+    "name": "Teclado Mecánico Keychron K2 V2",
+    "description": "Inalámbrico Bluetooth, Switches Gateron G Pro Red, Retroiluminación RGB",
+    "price": 320.00,
+    "stock": 25,
+    "category": "Accesorios",
+    "createDate": "2026-01-18",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1004",
+    "name": "Monitor Curvo Samsung Odyssey G5 27\"",
+    "description": "Resolución QHD 2560x1440, 165Hz, 1ms, FreeSync Premium",
+    "price": 1350.00,
+    "stock": 8,
+    "category": "Monitores",
+    "createDate": "2026-01-20",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1005",
+    "name": "Audífonos Gamer HyperX Cloud Alpha",
+    "description": "Sonido envolvente 7.1, Almohadillas de espuma viscoelástica, Micrófono extraíble",
+    "price": 299.99,
+    "stock": 30,
+    "category": "Audio",
+    "createDate": "2026-01-22",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1006",
+    "name": "Silla Gamer Corsair T3 Rush",
+    "description": "Diseño ergonómico revestido de tela suave, Reposabrazos 4D",
+    "price": 1150.00,
+    "stock": 5,
+    "category": "Mobiliario",
+    "createDate": "2026-01-25",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1007",
+    "name": "Disco Duro Externo Seagate Expansion 2TB",
+    "description": "USB 3.0, Portátil para PC y Mac, Color Negro",
+    "price": 260.00,
+    "stock": 50,
+    "category": "Almacenamiento",
+    "createDate": "2026-01-28",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1008",
+    "name": "Memoria USB Kingston DataTraveler Exodia 64GB",
+    "description": "USB 3.2 Gen 1, Tapa protectora de colores variados",
+    "price": 25.00,
+    "stock": 120,
+    "category": "Almacenamiento",
+    "createDate": "2026-02-02",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1009",
+    "name": "Tarjeta Gráfica NVIDIA GeForce RTX 4070",
+    "description": "12GB GDDR6X, Arquitectura Ada Lovelace, DLSS 3",
+    "price": 2899.00,
+    "stock": 4,
+    "category": "Componentes",
+    "createDate": "2026-02-05",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1010",
+    "name": "Procesador AMD Ryzen 5 5600X",
+    "description": "6 núcleos, 12 hilos, Frecuencia base 3.7GHz con Cooler Wraith Stealth",
+    "price": 680.00,
+    "stock": 15,
+    "category": "Componentes",
+    "createDate": "2026-02-08",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1011",
+    "name": "Placa Madre MSI B550M PRO-VDH WIFI",
+    "description": "Socket AM4, Soporta DDR4, Ranura M.2 Lightning Gen4, Wi-Fi",
+    "price": 490.00,
+    "stock": 10,
+    "category": "Componentes",
+    "createDate": "2026-02-10",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1012",
+    "name": "Memoria RAM Corsair Vengeance LPX 16GB",
+    "description": "DDR4 3200MHz CL16 (2x8GB), Disipador de calor de aluminio",
+    "price": 210.00,
+    "stock": 35,
+    "category": "Componentes",
+    "createDate": "2026-02-12",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1013",
+    "name": "Fuente de Poder EVGA 600 W1",
+    "description": "80+ White Certified, 600W, Ventilador silencioso de 120mm",
+    "price": 240.00,
+    "stock": 18,
+    "category": "Componentes",
+    "createDate": "2026-02-15",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1014",
+    "name": "Case Gamer NZXT H5 Flow",
+    "description": "Panel frontal perforado, Excelente flujo de aire, Vidrio templado",
+    "price": 399.00,
+    "stock": 7,
+    "category": "Componentes",
+    "createDate": "2026-02-18",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1015",
+    "name": "Impresora Multifuncional Epson EcoTank L3250",
+    "description": "Sistema de tanque de tinta continuo, Wi-Fi, Copia y Escanea",
+    "price": 799.00,
+    "stock": 9,
+    "category": "Impresión",
+    "createDate": "2026-02-20",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1016",
+    "name": "Router Wi-Fi 6 TP-Link Archer AX1500",
+    "description": "Doble banda Gigabit, Velocidades de hasta 1.5 Gbps",
+    "price": 230.00,
+    "stock": 22,
+    "category": "Redes",
+    "createDate": "2026-02-22",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1017",
+    "name": "Switch TP-Link 8 Puertos Gigabit Desktop",
+    "description": "Plug and Play, Carcasa de plástico compacta, Ahorro de energía",
+    "price": 75.00,
+    "stock": 40,
+    "category": "Redes",
+    "createDate": "2026-02-25",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1018",
+    "name": "Cable de Red UTP Cat6 5 metros",
+    "description": "Conectores RJ45 blindados, Alta velocidad para transferencia de datos",
+    "price": 20.00,
+    "stock": 80,
+    "category": "Redes",
+    "createDate": "2026-02-28",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1019",
+    "name": "Micrófono Condensador USB HyperX QuadCast",
+    "description": "Anti-vibración integrado, 4 patrones polares seleccionables, LED rojo",
+    "price": 499.00,
+    "stock": 14,
+    "category": "Audio",
+    "createDate": "2026-03-01",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1020",
+    "name": "Webcam Logitech C920s HD Pro",
+    "description": "Video fluido en Full HD 1080p con obturador de privacidad",
+    "price": 310.00,
+    "stock": 20,
+    "category": "Accesorios",
+    "createDate": "2026-03-03",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1021",
+    "name": "Tablet Samsung Galaxy Tab A9+",
+    "description": "Pantalla de 11 pulgadas, 64GB, 4GB RAM, Color Silver",
+    "price": 750.00,
+    "stock": 11,
+    "category": "Tablets",
+    "createDate": "2026-03-05",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1022",
+    "name": "Smartphone Xiaomi Redmi Note 13",
+    "description": "128GB ROM, 6GB RAM, Cámara principal de 108MP, Color Negro",
+    "price": 849.00,
+    "stock": 16,
+    "category": "Smartphones",
+    "createDate": "2026-03-08",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1023",
+    "name": "Smartwatch Amazfit GTR 4",
+    "description": "GPS de doble banda, Llamadas Bluetooth, Batería de hasta 14 días",
+    "price": 620.00,
+    "stock": 19,
+    "category": "Wearables",
+    "createDate": "2026-03-10",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1024",
+    "name": "Parlante Bluetooth JBL Flip 6",
+    "description": "Resistente al agua IP67, Sonido potente, Hasta 12 horas de reproducción",
+    "price": 450.00,
+    "stock": 28,
+    "category": "Audio",
+    "createDate": "2026-03-12",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1025",
+    "name": "Power Bank Anker 20000mAh",
+    "description": "Carga rápida PowerIQ, Dos puertos USB de salida",
+    "price": 185.00,
+    "stock": 33,
+    "category": "Accesorios",
+    "createDate": "2026-03-15",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1026",
+    "name": "Disco Solido SSD M.2 NVMe Kingston NV2 1TB",
+    "description": "Lectura hasta 3500 MB/s, Factor de forma M.2 2280",
+    "price": 280.00,
+    "stock": 42,
+    "category": "Almacenamiento",
+    "createDate": "2026-03-18",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1027",
+    "name": "Cooler CPU DeepCool AK400",
+    "description": "Disipador de calor de 4 tubos de cobre, Ventilador PWM de 120mm",
+    "price": 135.00,
+    "stock": 25,
+    "category": "Componentes",
+    "createDate": "2026-03-20",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1028",
+    "name": "Hub USB-C 7 en 1 Anker",
+    "description": "Incluye puerto HDMI 4K, lector de tarjetas SD/TF y 3 puertos USB 3.0",
+    "price": 140.00,
+    "stock": 30,
+    "category": "Accesorios",
+    "createDate": "2026-03-22",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1029",
+    "name": "Joystick Mando Inalámbrico Xbox para PC/Consola",
+    "description": "Diseño ergonómico texturizado, Conector de 3.5mm, Color Negro Carbón",
+    "price": 270.00,
+    "stock": 17,
+    "category": "Gaming",
+    "createDate": "2026-03-25",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1030",
+    "name": "Proyector Portátil Mini Full HD",
+    "description": "Conectividad HDMI, USB y AV, Compatible con smartphones y consolas",
+    "price": 380.00,
+    "stock": 10,
+    "category": "Video",
+    "createDate": "2026-03-28",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1031",
+    "name": "Estabilizador de Tensión Forza 1000VA",
+    "description": "8 tomas con protección contra sobretensiones y picos de voltaje",
+    "price": 125.00,
+    "stock": 15,
+    "category": "Energía",
+    "createDate": "2026-04-02",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1032",
+    "name": "Kit de Herramientas de Precisión para Reparación",
+    "description": "Juego de 62 desarmadores magnéticos para laptops y celulares",
+    "price": 65.00,
+    "stock": 22,
+    "category": "Herramientas",
+    "createDate": "2026-04-05",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1033",
+    "name": "Pasta Térmica Arctic MX-4 4g",
+    "description": "Compuesto térmico de alto rendimiento para CPU y GPU",
+    "price": 35.00,
+    "stock": 60,
+    "category": "Componentes",
+    "createDate": "2026-04-08",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1034",
+    "name": "Laptop HP 15.6\" Core i5 de 12va Gen",
+    "description": "8GB RAM, 256GB SSD NVMe, Windows 11 Home",
+    "price": 2100.00,
+    "stock": 6,
+    "category": "Computación",
+    "createDate": "2026-04-10",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1035",
+    "name": "Maletín Ejecutivo para Laptop 15.6\"",
+    "description": "Resistente al agua, Múltiples compartimentos acolchados",
+    "price": 110.00,
+    "stock": 20,
+    "category": "Accesorios",
+    "createDate": "2026-04-12",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1036",
+    "name": "Mousepad Extendido Razer Goliathus",
+    "description": "Superficie de tela optimizada para velocidad y control, Base de goma antideslizante",
+    "price": 95.00,
+    "stock": 45,
+    "category": "Accesorios",
+    "createDate": "2026-04-15",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1037",
+    "name": "Cargador de Pared Rápido USB-C 65W GaN",
+    "description": "Carga ultra rápida para laptops, tablets y smartphones",
+    "price": 150.00,
+    "stock": 25,
+    "category": "Accesorios",
+    "createDate": "2026-04-18",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1038",
+    "name": "Lámpara LED de Escritorio con Control táctil",
+    "description": "3 niveles de temperatura de color, Puerto de carga USB integrado",
+    "price": 85.00,
+    "stock": 18,
+    "category": "Mobiliario",
+    "createDate": "2026-04-20",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1039",
+    "name": "Tarjeta MicroSD SanDisk Ultra 128GB",
+    "description": "Clase 10, Velocidad de lectura hasta 140 MB/s con adaptador SD",
+    "price": 60.00,
+    "stock": 70,
+    "category": "Almacenamiento",
+    "createDate": "2026-04-22",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1040",
+    "name": "Soporte Ajustable de Aluminio para Laptop",
+    "description": "Diseño ergonómico plegable y disipador de calor",
+    "price": 70.00,
+    "stock": 30,
+    "category": "Accesorios",
+    "createDate": "2026-04-25",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1041",
+    "name": "Cámara de Seguridad IP Wi-Fi 360° Xiaomi",
+    "description": "Resolución 1080p, Visión nocturna infrarroja, Detección de movimiento AI",
+    "price": 145.00,
+    "stock": 24,
+    "category": "Smart Home",
+    "createDate": "2026-04-28",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1042",
+    "name": "Enchufe Inteligente Wi-Fi Smart Plug",
+    "description": "Compatible con Google Assistant y Alexa, Control remoto por app",
+    "price": 45.00,
+    "stock": 55,
+    "category": "Smart Home",
+    "createDate": "2026-05-02",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1043",
+    "name": "Foco LED Inteligente RGB Wi-Fi 9W",
+    "description": "Regulable, Millones de colores y luz blanca ajustable",
+    "price": 38.00,
+    "stock": 65,
+    "category": "Smart Home",
+    "createDate": "2026-05-05",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1044",
+    "name": "Tarjeta Gráfica AMD Radeon RX 6600",
+    "description": "8GB GDDR6, Arquitectura RDNA 2, Ideal para 1080p",
+    "price": 980.00,
+    "stock": 5,
+    "category": "Componentes",
+    "createDate": "2026-05-08",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1045",
+    "name": "Kit Teclado y Mouse Inalámbrico Logitech MK220",
+    "description": "Diseño compacto, Conexión inalámbrica avanzada de 2.4 GHz",
+    "price": 90.00,
+    "stock": 20,
+    "category": "Accesorios",
+    "createDate": "2026-05-10",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1046",
+    "name": "Disco Duro Externo WD Elements 1TB",
+    "description": "USB 3.0 de alta velocidad, Color negro clásico",
+    "price": 210.00,
+    "stock": 25,
+    "category": "Almacenamiento",
+    "createDate": "2026-05-12",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1047",
+    "name": "Adaptador Bluetooth USB 5.0 para PC",
+    "description": "Permite conectar controles, audífonos y celulares a computadoras de escritorio",
+    "price": 28.00,
+    "stock": 50,
+    "category": "Redes",
+    "createDate": "2026-05-15",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1048",
+    "name": "Audífonos Inalámbricos Bluetooth JBL Tune 510BT",
+    "description": "Sonido Pure Bass, Hasta 40 horas de batería, Carga rápida",
+    "price": 199.00,
+    "stock": 22,
+    "category": "Audio",
+    "createDate": "2026-05-18",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1049",
+    "name": "Cable HDMI 2.0 mallado 3 metros",
+    "description": "Soporta resolución 4K a 60Hz, Conectores chapados en oro",
+    "price": 40.00,
+    "stock": 40,
+    "category": "Accesorios",
+    "createDate": "2026-05-20",
+    "enabled": true
+  },
+  {
+    "code": "PROD-1050",
+    "name": "Bateria de Respaldo UPS APC 650VA",
+    "description": "Protección contra apagones y regulación de voltaje para PCs y consolas",
+    "price": 340.00,
+    "stock": 8,
+    "category": "Energía",
+    "createDate": "2026-05-22",
+    "enabled": true
+  }
+]
