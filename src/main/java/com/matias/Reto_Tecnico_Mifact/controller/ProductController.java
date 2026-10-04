@@ -5,6 +5,8 @@ import com.matias.Reto_Tecnico_Mifact.model.dto.PaginationResultDto;
 import com.matias.Reto_Tecnico_Mifact.model.dto.ProductDto;
 import com.matias.Reto_Tecnico_Mifact.model.dto.ProductFilterDto;
 import com.matias.Reto_Tecnico_Mifact.service.ProductService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -16,16 +18,19 @@ import java.net.URI;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/products")
+@Tag(name = "Product", description = "Product API operations")
 public class ProductController {
 
     private final ProductService productService;
 
     @GetMapping("/{code}")
+    @Operation(summary = "Get product by code", description = "Get product by code")
     public ResponseEntity<ProductDto> getProduct(@PathVariable String code) {
         return ResponseEntity.ok(productService.getProduct(code));
     }
 
     @GetMapping("/search")
+    @Operation(summary = "Search products by filters", description = "Search products by filters")
     public ResponseEntity<PaginationResultDto<ProductDto>> searchProducts(
             @RequestParam(defaultValue = "0") int pageNumber,
             @RequestParam(defaultValue = "10") int pageSize,
@@ -49,6 +54,7 @@ public class ProductController {
     }
 
     @PostMapping
+    @Operation(summary = "Save new product", description = "Save new product")
     public ResponseEntity<ProductDto> saveProduct(@RequestBody ProductDto productDto) {
         ProductDto saved = productService.saveProduct(productDto);
         URI location = URI.create("/api/orders/" + saved.getCode());
@@ -56,12 +62,14 @@ public class ProductController {
     }
 
     @PutMapping("/{code}")
+    @Operation(summary = "Update product by code", description = "Update product by code")
     public ResponseEntity<ProductDto> saveProduct(@RequestBody ProductDto productDto,
                                                   @PathVariable String code) {
         return ResponseEntity.ok(productService.updateProduct(productDto, code));
     }
 
     @DeleteMapping("/{code}")
+    @Operation(summary = "Delete product by code", description = "Delete product by code")
     public ResponseEntity<Void> deleteProduct(@PathVariable String code) {
         productService.deleteProduct(code);
         return ResponseEntity.noContent().build();

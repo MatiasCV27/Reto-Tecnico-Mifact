@@ -3,5 +3,6 @@ spring:
     name: reto-tecnico
   profiles:
     active: dev
+
 server:
   port: 1100
